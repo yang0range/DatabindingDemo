@@ -2,7 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-
+        <import type="com.yang.databindingdemo.model.Student"/>
+        <import type="com.yang.databindingdemo.model2.Student"
+                alias="Student2"/>
+        <variable name="studentInfo"
+                  type="Student"/>
+        <variable name="student2Info"
+                  type="Student2"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
