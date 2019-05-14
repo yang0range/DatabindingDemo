@@ -3,12 +3,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <import type="com.yang.databindingdemo.model.Student"/>
-        <import type="com.yang.databindingdemo.model2.Student"
-                alias="Student2"/>
         <variable name="studentInfo"
                   type="Student"/>
-        <variable name="student2Info"
-                  type="Student2"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -16,13 +12,26 @@
             tools:context=".MainActivity">
 
         <TextView
+                android:id="@+id/tv_studenname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello World!"
+                android:text="@{studentInfo.name,default = Yang}"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.377"/>
+
+        <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(studentInfo.age),default = 18}"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.474"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
