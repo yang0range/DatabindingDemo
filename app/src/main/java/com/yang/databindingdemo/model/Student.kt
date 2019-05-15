@@ -1,7 +1,7 @@
 package com.yang.databindingdemo.model
 
-import androidx.databinding.ObservableField
-import androidx.databinding.ObservableInt
+import androidx.databinding.ObservableArrayMap
+
 
 /**
  * @author yangzc
@@ -10,8 +10,9 @@ import androidx.databinding.ObservableInt
  *
  */
 class Student {
-    val name = ObservableField<String>()
-    val age = ObservableInt()
+
+    var studentInfo: ObservableArrayMap<String, Any> = ObservableArrayMap()
+
 }
 
 
