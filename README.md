@@ -5,3 +5,5 @@ Databinding的使用
 [Android Jetpack系列——细说DataBinding](https://www.jianshu.com/p/2b715d788423)  
 
 [Android Jetpack系列——DataBinding 使用进阶](https://www.jianshu.com/p/22f7d7703381)
+
+[Android Jetpack系列——DataBinding 最佳实践](https://www.jianshu.com/p/16db8614c39d)
